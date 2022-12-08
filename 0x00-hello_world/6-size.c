@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <libc6-dev-i386>
 /**
  * main - Entry point of program
  * Return: 0
