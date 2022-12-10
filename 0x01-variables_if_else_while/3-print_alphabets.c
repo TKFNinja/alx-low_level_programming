@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - Entry point
+ * Return: 0
+*/
+
+int main(void)
+{
+	char uppercase = 'A';
+	char lowercase = 'a';
+
+	while (lowercase <= 'z')
+	{
+		putchar(lowercase);
+		lowercase++;
+	}
+	while (uppercase <= 'Z')
+	{
+		putchar(uppercase);
+		uppercase++;
+	}
+	putchar('\n');
+	return (0);
+}
