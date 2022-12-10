@@ -7,7 +7,6 @@
 int main(void)
 {
 	int n = 0;
-	char hex = [a, b, c, d, e, f];
 
 	while (n < 16)
 	{
