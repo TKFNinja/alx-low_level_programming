@@ -7,6 +7,7 @@
 int main(void)
 {
 	int n = 0;
+	char hex = [a, b, c, d, e, f];
 
 	while (n < 10)
 	{
@@ -15,7 +16,7 @@ int main(void)
 	}
 	for (n = 10; n < 16; n++)
 	{
-		putchar(n % 16);
+		putchar(hex[(n % 10) + 1]);
 	}
 	putchar('\n');
 	return (0);
