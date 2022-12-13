@@ -15,7 +15,7 @@ void _putstring(char text[100])
 {
 	int i = 0;
 
-	while text[i] != '\0'
+	while (text[i] != '\0')
 	{
 		_putchar(text[i]);
 		i++;
