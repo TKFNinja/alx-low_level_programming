@@ -9,7 +9,7 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-int _islower(char c)
+int _islower(int c)
 {
 	char alphabet = 'a';
 
