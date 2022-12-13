@@ -8,3 +8,4 @@
 
 int _putchar(char c);
 void _putstring(char text[100]);
+void print_alphabet(void);
