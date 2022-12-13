@@ -17,7 +17,6 @@ int _islower(char c)
 	{	
 		if (c == alphabet)
 		{
-			_putchar(c);
 			return (1);
 		}
 		else
@@ -28,6 +27,12 @@ int _islower(char c)
 
 int main(void)
 {
-	_islower('c');
+	r = _islower('H');
+	_putchar(r + '0');
+	r = _islower('o');
+	_putchar(r + '0');
+	r = _islower(108);
+	_putchar(r + '0');
+	_putchar('\n');
 	return (0);
 }
