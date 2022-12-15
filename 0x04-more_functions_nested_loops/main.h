@@ -11,3 +11,8 @@ void _putstring(char text[100]);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _isupper(int c);
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
