@@ -7,16 +7,16 @@
 
 int _isdigit(int c)
 {
-	int digit = 0;
+	int dig = 0;
 	
-	while (digit <= 9)
+	while (dig <= 9)
 	{
-		if (c == digit)
+		if (c == dig)
 		{
 			return (1);
 		}
 		else
-			digit++;
+			dig++;
 	}
 	return (0);
 }
