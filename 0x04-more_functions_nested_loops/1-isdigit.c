@@ -7,9 +7,9 @@
 
 int _isdigit(int c)
 {
-	int dig = 0;
+	char dig = '0';
 	
-	while (dig <= 9)
+	while (dig <= '9')
 	{
 		if (c == dig)
 		{
