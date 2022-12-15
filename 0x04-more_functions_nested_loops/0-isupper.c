@@ -5,16 +5,16 @@
 */
 int _isupper(int c)
 {
-	int alphabet = 'A';
+	int alpha = 'A';
 
-	while (alphabet <= 'Z')
+	while (alpha <= 'Z')
 	{
-		if (c == alphabet)
+		if (c == alpha)
 		{
 			return (1);
 		}
 		else
-			alphabet++;
+			alpha++;
 	}
 	return (0);
 }
