@@ -4,13 +4,14 @@
  * Return: 0
 */
 
+
 int _isupper(int c)
 {
 	int alphabet = 'A';
 
 	while (alphabet <= 'Z')
 	{
-		if (c == alphabet) 
+		if (c == alphabet)
 		{
 			return (1);
 		}
