@@ -9,18 +9,21 @@
 void print_square(int size)
 {
 	int i = 0;
+	int k = 0;
 
 	if (size > 0)
 	{
-		while (size--)
+		while (k < size)
 		{
 			i = 0;
+		
 			while (i < size)
 			{
 				_putchar('#');
 				i++;
 			}
 			_putchar('\n');
+			k++;
 		}
 	}
 	else
