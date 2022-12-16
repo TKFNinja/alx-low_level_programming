@@ -21,7 +21,11 @@ void more_numbers(void)
 			_putchar((i % 10)+'0');
 			number++;
 		}
-		_putchar('\n');
+
+		if (i < 9)
+		{
+			_putchar('\n');
+		}
 		i++;
 	}
 }
