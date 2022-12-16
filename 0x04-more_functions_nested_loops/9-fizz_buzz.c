@@ -19,6 +19,7 @@ void _putstring(char text[100])
 		_putchar(text[i]);
 		i++;
 	}
+}
 
 int main(void)
 {
