@@ -18,14 +18,10 @@ void more_numbers(void)
 			{
 				_putchar((number / 10) + '0');
 			}
-			_putchar((i % 10)+'0');
+			_putchar((number % 10) + '0');
 			number++;
 		}
-
-		if (i < 9)
-		{
-			_putchar('\n');
-		}
+		_putchar('\n');
 		i++;
 	}
 }
