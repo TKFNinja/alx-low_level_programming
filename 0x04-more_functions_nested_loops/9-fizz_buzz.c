@@ -14,9 +14,9 @@ int main(void)
 
 	while (i < 100)
 	{
-		if ((i % 3 == 0) && (i % 5 != 0))
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("Fizz ");
+			printf("FizzBuzz ");
 		}
 		else
 		{
@@ -25,12 +25,14 @@ int main(void)
 				printf("Buzz ");
 			}
 			else
-				printf("%d ", i);
-		}
-		
-		if ((i % 3 == 0) && (i % 5 == 0))
-		{
-			printf("FizzBuzz ");
+			{
+				if (i % 3 == 0)
+				{
+					printf("Fizz ");
+				}
+				else
+					printf("%d ", i);
+			}
 		}
 		i++;
 	}
