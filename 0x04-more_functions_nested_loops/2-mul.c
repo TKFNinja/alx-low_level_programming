@@ -1,7 +1,8 @@
 #include "main.h"
 /**
 * mul - multiplies two integers
-* @a,b: The two integers to be multiplied
+* @a: The first integers to be multiplied
+* @b: The other integer to be ultiplied
 *
 * Return: the product a*b
 */
