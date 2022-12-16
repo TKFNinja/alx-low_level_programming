@@ -2,12 +2,14 @@
 /**
  * print_line - draws a straight line
  * @n: The number of \ to print
+ *
  * Return: a diagonal line
 */
 
 void print_diagonal(int n)
-
 {
+	int i = 0;
+
 	if (n > 0)
 	{
 		while (n--)
@@ -15,9 +17,12 @@ void print_diagonal(int n)
 			_putchar('\\');
 			_putchar('\n');
 
-			if (n > 0)
+			i = 0;
+
+			while (i <= n)
 			{
 				_putchar(' ');
+				i++;
 			}
 		}
 	}
