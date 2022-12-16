@@ -1,18 +1,16 @@
-nclude "main.h"
+#include "main.h"
 /**
  * print_line - draws a straight line
+ * Return: a straight line
 */
 
 void print_line(int n)
 {
-	int i = 0;
-	
 	if (n > 0)
 	{
-		while (i < n)
+		while (n--)
 		{
 			_putchar('_');
-			i++;
 		}
 	}
 	_putchar('\n');
