@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
  * main - prints the numbers from 1 to 100, followed by a new line. But for
  * multiples of three print Fizz instead of the number and for the 
@@ -10,17 +9,6 @@
  * Return: 0
 */
 
-void _putstring(char text[100])
-{
-	int i = 0;
-
-	while (text[i] != '\0')
-	{
-		_putchar(text[i]);
-		i++;
-	}
-}
-
 int main(void)
 {
 	int i = 1;
@@ -29,25 +17,22 @@ int main(void)
 	{
 		if (i % 3 == 0)
 		{
-			_putstring("Fizz ");
+			printf("Fizz ");
 		}
 		else
 		{
 			if (i % 5 == 0)
 			{
-				_putstring("Buzz ");
+				printf("Buzz ");
 			}
 			else
 			{
 				if ((i % 3 == 0) && (i % 5 == 0))
 				{
-					_putstring("FizzBuzz ");
+					printf("FizzBuzz ");
 				}
 				else
-				{
-					_putstring(i + '0');
-					_putstring(' ');
-				}
+					printf("%d ", i);
 			}
 		}
 		i++;
