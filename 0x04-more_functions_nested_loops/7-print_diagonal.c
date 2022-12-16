@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - draws a straight line
+ * print_diagonal - draws a diagonal line
  * @n: The number of \ to print
  *
  * Return: a diagonal line
