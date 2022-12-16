@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - check the code
- * Return: 0
+* main - check the code
+* Return: 0
 */
 
 int _isupper(int c)
