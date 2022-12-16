@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * print_line - draws a straight line
+ * @n: The number of underscores to print
+ *
  * Return: a straight line
 */
 
