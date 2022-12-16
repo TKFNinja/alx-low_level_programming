@@ -9,13 +9,13 @@
 void more_numbers(void)
 {
 	int number = 0;
-	int i = 0;
+	int i = 10;
 
-	while (i <= 9)
+	while (i--)
 	{
 		while (number <= 14)
 		{
-			if(number >= 10)
+			if (number >= 10)
 			{
 				_putchar((number / 10) + '0');
 			}
@@ -23,6 +23,5 @@ void more_numbers(void)
 			number++;
 		}
 		_putchar('\n');
-		i++;
 	}
 }
