@@ -4,11 +4,6 @@
  * Return: 0
 */
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 void print_alphabet(void)
 {
 	char alphabet = 'a';
@@ -30,10 +25,4 @@ void print_alphabet_x10(void)
 		print_alphabet();
 		i++;
 	}
-}
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
 }
