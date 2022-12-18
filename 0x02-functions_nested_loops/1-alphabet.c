@@ -1,13 +1,10 @@
 #include "main.h"
 /**
  * main - Entry point
- * Return: 0
+ * @void: takes no arguements
+ *
+ * Return: the letters of the alphabet followed by a new line
 */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 void print_alphabet(void)
 {
@@ -19,10 +16,4 @@ void print_alphabet(void)
 		alphabet++;
 	}
 	_putchar('\n');
-}
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
