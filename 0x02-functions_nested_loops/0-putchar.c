@@ -4,25 +4,16 @@
  * Return: 0
 */
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-void _putstring(char text[100])
+void main(void)
 {
 	int i = 0;
+	char text[] = "_putchar";
 	
 	while (text[i] != '\0')
 	{
 		_putchar(text[i]);
 		i++;
 	}
-}
-
-int main(void)
-{
-	_putstring("_putchar");
 	_putchar('\n');
 	return (0);
 }
