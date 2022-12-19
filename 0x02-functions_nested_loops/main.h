@@ -10,3 +10,4 @@ int _putchar(char c);
 void _putstring(char text[100]);
 void print_alphabet(void);
 void print_alphabet_x10(void);
+int _islower(int c);
