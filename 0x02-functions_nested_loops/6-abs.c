@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - computes the absolute value of an integer.
- * @n the interger whose absolute value is sort for
+ * @n: the interger whose absolute value is sort for
  *Return: the absolute value
 */
 
