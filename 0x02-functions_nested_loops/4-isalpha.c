@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - checks for alphabetic character.
+ * _islower - checks for lowercase alphabetic character.
  *@c: the letter to be checked
  *
  * Return: 1 if c is a letter and 0 otherwise
@@ -21,6 +21,10 @@ int _islower(int c)
 	}
 	return (0);
 }
+
+/**
+ * _isalpha - checks for alphabetic character. 
+*/ 
 
 int _isalpha(int c)
 {
