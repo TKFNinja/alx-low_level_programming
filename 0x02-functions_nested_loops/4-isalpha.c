@@ -35,5 +35,5 @@ int _isalpha(int c)
 		else
 			alphabet++;
 	}
-	_islower(c);
+	return (_islower(c));
 }
