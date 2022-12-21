@@ -51,4 +51,5 @@ int _atoi(char *s)
 	}
 	else
 		return (-result);
-}		
+	return (result);
+}
