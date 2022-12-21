@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 /**
  * _atoi - converts a string to an integer.
  * @s: string to be converted
@@ -26,10 +29,10 @@ int _atoi(char *s)
 		{
 			if (s[i] == j)
 			{
-				result = result + (j * (10 ^ k));
+				result = result + (j * pow(10, k));
 				k++;
 			}
-		
+
 			j++;
 		}
 	}
