@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 /**
  * _atoi - converts a string to an integer.
  * @s: string to be converted
@@ -13,7 +10,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int j = 0;
-	int k = 0;
+	int pow = 1;
 	int length = 0;
 	int negatives = 0;
 	int result = 0;
@@ -29,8 +26,8 @@ int _atoi(char *s)
 		{
 			if (s[i] == j)
 			{
-				result = result + (j * pow(10, k));
-				k++;
+				result = result + (j * pow);
+				pow = pow * 10;
 			}
 
 			j++;
@@ -39,9 +36,9 @@ int _atoi(char *s)
 
 	j = 0;
 	i = 0;
-	k--;
+	pow = pow / 10;
 
-	while (s[i] != (result / (10 ^ k)))
+	while (s[i] != (result / pow))
 	{
 		if (s[i] == '-')
 		{
@@ -50,6 +47,7 @@ int _atoi(char *s)
 
 		i++;
 	}
+
 	if ((negatives % 2) == 0)
 	{
 		return (result);
