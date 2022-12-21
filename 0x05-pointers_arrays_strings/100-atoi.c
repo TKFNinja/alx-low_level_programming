@@ -44,12 +44,17 @@ int _atoi(char *s)
 		{
 			negatives++;
 		}
+
+		i++;
 	}
 	if ((negatives % 2) == 0)
 	{
 		return (result);
 	}
 	else
+	{
 		return (-result);
+	}
+
 	return (result);
 }
