@@ -21,10 +21,12 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		if (i < n)
 		{
-			dest[j] = s[i];
+			dest[j] = src[i];
 			i++;
 			j++;
 		}
+		else
+			i++;
 	}
 
 	dest[j] = '\0';
