@@ -4,8 +4,7 @@
  * _strcmp - compares two strings
  * @s1: the sample string
  * @s2: the test string
- * 
- * Return: an integer
+ * Return: 1 if s1 > s2, -1 if s1 < s2 and 0 if they are equal
 */
 
 int _strcmp(char *s1, char *s2)
@@ -13,8 +12,6 @@ int _strcmp(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	int sum1 = 0;
-	int sum2 = 0;
 
 	while (s1[i] != '\0')
 	{
@@ -26,45 +23,35 @@ int _strcmp(char *s1, char *s2)
 		j++;
 	}
 
-	if (i < j)
+	while ((s1[k] != '\0') && (s2[k] != '\0'))
 	{
-		return (-15);
+		if ((s1[k] / 10 + '0') != (s2[k] / 10 + '0'))
+		{
+			return ((s1[k] / 10 + '0') - (s2[k] / 10 + '0'));
+		}
+		else
+			k++
+	}
+
+	if ((k == i) && (k != j))
+	{
+		return (-(s2[k] / 10 + '0'));
 	}
 	else
 	{
-		if (i > j)
+		if ((k == j) && (k != i))
 		{
-			return (15);
+			return (s1[k] / 10 + '0');
 		}
 		else
-		{
-			while (s1[k] != '\0')
-			{
-				if (s1[k] > s2[k])
-				{
-					return (15);
-				}
-				else
-				{
-					if (s1[k] < s2[k])
-					{
-						return (-15);
-					}
-					else
-						k++;
-				}
-			}
-
-			if (k == i)
-				return (0);
-		}
+			return (0);
 	}
 }
 
 int main(void)
 {
-    char s1[] = "Hello";
-    char s2[] = "World!";
+    char s1[] = "Holberton";
+    char s2[] = "Holbeerton";
 
     printf("%d\n", _strcmp(s1, s2));
     printf("%d\n", _strcmp(s2, s1));

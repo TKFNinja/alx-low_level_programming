@@ -29,7 +29,7 @@ int _strcmp(char *s1, char *s2)
 			return ((s1[k] / 10 + '0') - (s2[k] / 10 + '0'));
 		}
 		else
-			k++
+			k++;
 	}
 
 	if ((k == i) && (k != j))
