@@ -34,7 +34,7 @@ int _strcmp(char *s1, char *s2)
 		}
 		else
 		{
-			while (s1[k] != '\0')
+			while (k < i)
 			{
 				if ((s1[k] / 10 + '0') > (s2[k] / 10 + '0'))
 				{
