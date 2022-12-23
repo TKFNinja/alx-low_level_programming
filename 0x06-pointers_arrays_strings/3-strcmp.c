@@ -23,38 +23,22 @@ int _strcmp(char *s1, char *s2)
 	{
 		j++;
 	}
-/*
-	if (i < j)
+	while (s1[k] != '\0') && (s2[k] != '\0')
 	{
-		return (-15);
-	}
-	else
-	{
-		if (i > j)
+		if (s1[k] > s2[k])
 		{
 			return (15);
 		}
 		else
-		{*/
-			while (s1[k] != '\0')
+		{
+			if (s1[k] < s2[k])
 			{
-				if (s1[k] > s2[k])
-				{
-					return (15);
-				}
-				else
-				{
-					if (s1[k] < s2[k])
-					{
-						return (-15);
-					}
-					else
-						k++;
-				}
+				return (-15);
 			}
-
-			if (k == i)
-				return (0);
-		//}
+			else
+				k++;
+		}
 	}
+	if (k == i)
+		return (0);
 }
