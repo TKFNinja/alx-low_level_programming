@@ -2,7 +2,7 @@
 /**
  * _strcmp - compares two strings
  * @s1: the sample string
- * @src: the test string
+ * @s2: the test string
  * 
  * Return: a pointer to resulting string
 */
@@ -12,8 +12,8 @@ int _strcmp(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	char sum1 = 0;
-	char sum2 = 0;
+	char sum1 = '0';
+	char sum2 = '0';
 
 	while (s1[i] != '\0')
 	{
