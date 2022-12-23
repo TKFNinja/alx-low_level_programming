@@ -19,12 +19,11 @@ char *cap_string(char *str)
 		{
 			if (str[j] == words[i])
 			{
-				j++;
 				for (test = 'a' ; test <= 'z' ; test++)
 				{
-					if (str[j] == test)
+					if (str[j + 1] == test)
 					{
-						str[j] = str[j] - 32;
+						str[j + 1] = str[j + 1] - 32;
 					}
 				}
 			}

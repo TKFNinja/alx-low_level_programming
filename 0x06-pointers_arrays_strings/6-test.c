@@ -20,12 +20,11 @@ char *cap_string(char *str)
 		{
 			if (str[j] == words[i])
 			{
-				j++;
 				for (test = 'a' ; test <= 'z' ; test++)
 				{
-					if (str[j] == test)
+					if (str[j + 1] == test)
 					{
-						str[j] = str[j] - 32;
+						str[j + 1] = str[j + 1] - 32;
 					}
 				}
 			}
@@ -35,9 +34,9 @@ char *cap_string(char *str)
 
 	for (test = 'a' ; test <= 'z' ; test++)
 	{
-		if (str[o] == test)			
+		if (str[0] == test)			
 		{
-			str[o] = str[o] - 32;
+			str[0] = str[0] - 32;
 		}
 	}
 	return (str);
@@ -45,7 +44,7 @@ char *cap_string(char *str)
 
 int main(void)
 {
-    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char str[] = "hello world! expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
     char *ptr;
 
     ptr = cap_string(str);
