@@ -33,7 +33,7 @@ char *cap_string(char *str)
 
 	for (test = 'a' ; test <= 'z' ; test++)
 	{
-		if (str[0] == test)			
+		if (str[0] == test)
 		{
 			str[0] = str[0] - 32;
 		}
