@@ -50,7 +50,6 @@ int _strcmp(char *s1, char *s2)
 						k++;
 				}
 			}
-
 			return (0);
 		}
 	}
