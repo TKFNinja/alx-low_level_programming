@@ -11,7 +11,8 @@ char *cap_string(char *str)
 	int i = 0;
 	int j = 0;
 	char test = 'a';
-	char words[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char words[] = {' ', '\t', '\n', ',', ';', '.', '!', '?',
+	       		'"', '(', ')', '{', '}'};
 
 	while (str[j] != '\0')
 	{
