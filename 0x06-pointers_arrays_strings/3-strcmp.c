@@ -24,9 +24,9 @@ int _strcmp(char *s1, char *s2)
 
 	while ((s1[k] != '\0') && (s2[k] != '\0'))
 	{
-		if ((s1[k] / 10 + '0') != (s2[k] / 10 + '0'))
+		if (s1[k] != s2[k])
 		{
-			return ((s1[k] / 10 + '0') - (s2[k] / 10 + '0'));
+			return (s1[k] - s2[k]);
 		}
 		else
 			k++;
@@ -34,13 +34,13 @@ int _strcmp(char *s1, char *s2)
 
 	if ((k == i) && (k != j))
 	{
-		return (-(s2[k] / 10 + '0'));
+		return (-s2[k]);
 	}
 	else
 	{
 		if ((k == j) && (k != i))
 		{
-			return (s1[k] / 10 + '0');
+			return (s1[k]);
 		}
 		else
 			return (0);
