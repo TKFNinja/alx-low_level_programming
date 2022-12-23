@@ -23,7 +23,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		j++;
 	}
-
+/*
 	if (i < j)
 	{
 		return (-15);
@@ -35,7 +35,7 @@ int _strcmp(char *s1, char *s2)
 			return (15);
 		}
 		else
-		{
+		{*/
 			while (s1[k] != '\0')
 			{
 				if (s1[k] > s2[k])
@@ -55,6 +55,6 @@ int _strcmp(char *s1, char *s2)
 
 			if (k == i)
 				return (0);
-		}
+		//}
 	}
 }
