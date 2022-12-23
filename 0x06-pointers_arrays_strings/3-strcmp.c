@@ -22,7 +22,7 @@ int _strcmp(char *s1, char *s2)
 		j++;
 	}
 
-	while (s1[k] != '\0') && (s2[k] != '\0')
+	while ((s1[k] != '\0') && (s2[k] != '\0'))
 	{
 		if ((s1[k] / 10 + '0') > (s2[k] / 10 + '0'))
 		{
@@ -39,16 +39,16 @@ int _strcmp(char *s1, char *s2)
 		}
 	}
 
-	if (j == i) && (k == i)
+	if ((j == i) && (k == i))
 	{
 		return (0);
 	}
 	else
 	{
-		if (j > i) && (k == i)
+		if ((j > i) && (k == i))
 			return (-15);
 		
-		if (j < i) && (k == j)
+		if ((j < i) && (k == j))
 			return (15);
 	}
 	return (0);
