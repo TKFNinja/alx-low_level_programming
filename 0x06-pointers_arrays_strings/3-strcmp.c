@@ -22,35 +22,27 @@ int _strcmp(char *s1, char *s2)
 		j++;
 	}
 
-	if (i > j)
+	while ((s1[k] != '\0') && (s2[k] != '\0'))
 	{
-		return (1);
+		if ((s1[k] / 10 + '0') != (s2[k] / 10 + '0'))
+		{
+			return ((s1[k] / 10 + '0') - (s2[k] / 10 + '0'));
+		}
+		else
+			k++
+	}
+
+	if ((k == i) && (k != j))
+	{
+		return (-(s2[k] / 10 + '0'));
 	}
 	else
 	{
-		if (i < j)
+		if ((k == j) && (k != i))
 		{
-			return (-1);
+			return (s1[k] / 10 + '0');
 		}
 		else
-		{
-			while (k < i)
-			{
-				if ((s1[k] / 10 + '0') > (s2[k] / 10 + '0'))
-				{
-					return (1);
-				}
-				else
-				{
-					if ((s1[k] / 10 + '0') < (s2[k] / 10 + '0'))
-					{
-						return (-1);
-					}
-					else
-						k++;
-				}
-			}
 			return (0);
-		}
 	}
 }
