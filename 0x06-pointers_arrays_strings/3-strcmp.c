@@ -39,6 +39,16 @@ int _strcmp(char *s1, char *s2)
 				k++;
 		}
 	}
-	if (k == i)
+	if (j == i) && (k == i)
+	{
 		return (0);
+	}
+	else
+	{
+		if (j > i) && (k == i)
+			return (-15);
+		
+		if (j < i) && (k == j)
+			return (15);
+	}
 }
