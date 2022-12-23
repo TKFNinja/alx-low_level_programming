@@ -11,8 +11,6 @@ int _strcmp(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	int sum1 = 0;
-	int sum2 = 0;
 
 	while (s1[i] != '\0')
 	{
@@ -23,6 +21,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		j++;
 	}
+
 	while (s1[k] != '\0') && (s2[k] != '\0')
 	{
 		if (s1[k] > s2[k])
@@ -39,6 +38,7 @@ int _strcmp(char *s1, char *s2)
 				k++;
 		}
 	}
+
 	if (j == i) && (k == i)
 	{
 		return (0);
