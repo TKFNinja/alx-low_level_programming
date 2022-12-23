@@ -15,7 +15,7 @@ char *cap_string(char *str)
 
 	while (str[j] != '\0')
 	{
-		for (i = 0 ; i < 13 ; i++)
+		for (i = 0 ; i < 9 ; i++)
 		{
 			if (str[j] == words[i])
 			{
