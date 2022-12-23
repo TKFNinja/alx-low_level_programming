@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * cap_string - capitalizes all words of a string.
  * @str: the sample string
@@ -34,10 +35,21 @@ char *cap_string(char *str)
 
 	for (test = 'a' ; test <= 'z' ; test++)
 	{
-		if (str[0] == test)			
+		if (str[o] == test)			
 		{
-			str[0] = str[0] - 32;
+			str[o] = str[o] - 32;
 		}
 	}
 	return (str);
+}
+
+int main(void)
+{
+    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char *ptr;
+
+    ptr = cap_string(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
