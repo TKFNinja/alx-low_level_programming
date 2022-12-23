@@ -51,4 +51,5 @@ int _strcmp(char *s1, char *s2)
 		if (j < i) && (k == j)
 			return (15);
 	}
+	return (0);
 }
