@@ -16,7 +16,7 @@ void print_number(int n)
 	if (n == INT_MIN)
 	{
 		_putchar('-');
-		n = INT_MAX;
+		n = 2147483647;
 	}
 
 	if (n / 10 != 0)
