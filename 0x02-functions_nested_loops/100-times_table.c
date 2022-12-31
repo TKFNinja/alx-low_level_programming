@@ -1,13 +1,14 @@
 #include "main.h"
 /**
- * times_table - prints the n time table
+ * print_times_table - prints the n time table
+ * @n: the number whose timetable will be printed
  * Returns: ntimes table
 */
 
 void print_times_table(int n)
 {
 	int i, j;
-	
+
 	if (n <= 15 && n >= 0)
 	{
 		for (i = 0 ; i <= n ; i++)
