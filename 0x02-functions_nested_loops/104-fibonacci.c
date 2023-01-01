@@ -18,9 +18,9 @@ int main(void)
 		Fibo2 = Fibo2 + Fibo1;
 		Fibo1 = n;
 		if (m < 97)
-			printf("%.0f, ", Fibo1);
+			printf("%.0lf, ", Fibo1);
 		if (m == 97)
-			printf("%.0f", Fibo1);
+			printf("%.0lf", Fibo1);
 		m++;
 	}
 	printf("\n");
