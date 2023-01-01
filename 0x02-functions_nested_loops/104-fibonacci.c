@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	float Fibo1 = 1;
-	float n = 0;
-	float Fibo2 = 1;
+	double Fibo1 = 1;
+	double n = 0;
+	double Fibo2 = 1;
 	int m = 0;
-
+ 
 	while (m < 98)
 	{
 		n = Fibo2;
