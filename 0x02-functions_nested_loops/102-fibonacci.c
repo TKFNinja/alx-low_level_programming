@@ -17,7 +17,10 @@ int main(void)
 		n = Fibo2;
 		Fibo2 = Fibo2 + Fibo1;
 		Fibo1 = n;
-		printf("%ld, ", Fibo1);
+		if (m < 49)
+			printf("%ld, ", Fibo1);
+		if (m == 49)
+			printf("%ld", Fibo1);
 		m++;
 	}
 	printf("\n");
