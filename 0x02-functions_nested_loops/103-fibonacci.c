@@ -17,8 +17,6 @@ int main(void)
 		n = Fibo2;
 		Fibo2 = Fibo2 + Fibo1;
 		Fibo1 = n;
-		if (Fibo1 % 2 == 0)
-			sum = sum + Fibo1;
 		if (Fibo2 % 2 == 0)
 			sum = sum + Fibo2;
 	}
