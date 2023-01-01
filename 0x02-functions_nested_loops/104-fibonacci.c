@@ -7,9 +7,9 @@
 
 int main(void)
 {
-	double Fibo1 = 1;
-	double n = 0;
-	double Fibo2 = 1;
+	long double Fibo1 = 1;
+	long double n = 0;
+	long double Fibo2 = 1;
 	int m = 0;
  
 	while (m < 98)
