@@ -11,7 +11,7 @@ int main(void)
 	long double n = 0;
 	long double Fibo2 = 1;
 	int m = 0;
- 
+
 	while (m < 98)
 	{
 		n = Fibo2;
