@@ -18,7 +18,8 @@ char *_strchr(char *s, char c)
 			locate = &s[i];
 			return (locate);
 		}
-		i++;
+		else
+			i++;
 	}
 	return (NULL);
 }
