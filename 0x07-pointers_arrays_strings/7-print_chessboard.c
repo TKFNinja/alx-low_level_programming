@@ -2,7 +2,7 @@
 /**
  * print_chessboard - prints the chessboard.
  * @a: string to be searched
- * 
+ *
  * Return: void
 */
 
