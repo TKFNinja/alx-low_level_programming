@@ -9,12 +9,19 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, sum1, sum2 = 0;
+	int i, sum1, sum2 = 0;
 
 	while (i < size)
 	{
-		sum1 = sum1 + a[i][i];
-		sum2 = sum2 + a[i][size - 1 - i];
+		j = 0;
+		while (j < size)
+		{
+			if (i == j)
+				sum1 = sum1 + a[i][j];
+			if (i + j == size - 1)	
+				sum2 = sum2 + a[i][j];
+			j++;
+		}
 		i++;
 	}
 	printf("%d, %d\n", sum1, sum2);
