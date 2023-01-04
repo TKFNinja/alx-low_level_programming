@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * _strstr - locates a substring.
@@ -25,7 +26,11 @@ char *_strstr(char *haystack, char *needle)
 					k++;
 				}
 				else
+				{
+					j = 0;
+					k = i;
 					break;
+				} 
 			}
 			if (needle[j] == '\0')
 			{
@@ -36,4 +41,15 @@ char *_strstr(char *haystack, char *needle)
 		i++;
 	}
 	return (NULL);
+}
+
+int main(void)
+{
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
+
+    t = _strstr(s, f);
+    printf("%s\n", t);
+    return (0);
 }
