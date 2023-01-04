@@ -8,7 +8,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned long int i, j, k = 0;
+	unsigned long long int i, j, k = 0;
 	char *locate;
 
 	while (haystack[i] != '\0')
