@@ -3,12 +3,12 @@
  * _strstr - locates a substring.
  * @haystack: string to be searched
  * @needle: bytes to be located in haystack
- * Return: a pointer to the beginning of haystack 
+ * Return: a pointer to the beginning of haystack
 */
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned long long int i, j, k = 0;
+	unsigned long int i, j, k = 0;
 	char *locate;
 
 	while (haystack[i] != '\0')
